@@ -1,0 +1,80 @@
+# ─────────────────────────────────────────────────────────────────
+# .gitignore – SemiMind AI
+# ─────────────────────────────────────────────────────────────────
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+*.whl
+
+# ── Virtual environments ──────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+.conda/
+
+# ── Environment secrets ───────────────────────────────────────────
+.env
+*.env.local
+
+# ── Jupyter ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb~
+
+# ── Logs ─────────────────────────────────────────────────────────
+logs/*.log
+logs/*.txt
+
+# ── Raw datasets (too large for GitHub) ──────────────────────────
+datasets/raw/**/*.csv
+datasets/raw/**/*.data
+datasets/raw/**/*.xlsx
+datasets/raw/**/*.parquet
+!datasets/raw/**/.gitkeep
+
+# ── Processed datasets (generated artefacts) ─────────────────────
+datasets/processed/**/*.csv
+datasets/processed/**/*.parquet
+!datasets/processed/**/.gitkeep
+
+# ── OS artefacts ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ─────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── pytest / coverage ─────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ── Temporary files ───────────────────────────────────────────────
+*.tmp
+*.bak
+*.swp
+~$*
+
+# ── Keep these directories tracked via placeholder files ──────────
+!datasets/raw/ai4i/.gitkeep
+!datasets/raw/secom/.gitkeep
+!datasets/processed/ai4i/.gitkeep
+!datasets/processed/secom/.gitkeep
+!datasets/reports/ai4i/.gitkeep
+!datasets/reports/secom/.gitkeep
+!logs/.gitkeep

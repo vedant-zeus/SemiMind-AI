@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────
+# SemiMind AI – Dataset Configuration
+# Phase 1: Raw Dataset Paths & Metadata
+# ─────────────────────────────────────────────
+# All paths are relative to the project root.
+# Override via .env or environment variables as needed.
+
+datasets:
+
+  ai4i:
+    name: "AI4I 2020 Predictive Maintenance Dataset"
+    description: >
+      Industrial equipment monitoring dataset with sensor measurements
+      and machine failure indicators for predictive maintenance.
+    source: "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+    raw_file: "ai4i/ai4i2020.csv"         # relative to datasets/raw/
+    encoding: "utf-8"
+    separator: ","
+    header: 0                              # row index of the header (0 = first row)
+    target_column: "Machine failure"
+    id_columns:
+      - "UDI"
+      - "Product ID"
+    categorical_columns:
+      - "Type"
+    failure_type_columns:
+      - "TWF"
+      - "HDF"
+      - "PWF"
+      - "OSF"
+      - "RNF"
+
+  secom:
+    name: "SECOM Semiconductor Manufacturing Dataset"
+    description: >
+      High-dimensional semiconductor manufacturing process dataset.
+      Features are space-separated sensor readings; labels are in a
+      separate file (-1 = pass, 1 = fail).
+    source: "https://archive.ics.uci.edu/dataset/179/secom"
+    raw_data_file: "secom/secom.data"     # relative to datasets/raw/
+    raw_labels_file: "secom/secom_labels.data"
+    encoding: "utf-8"
+    separator: " "
+    header: null                          # no header row in the data file
+    target_column: "label"
+    timestamp_column: "timestamp"
+    label_encoding:
+      pass: -1
+      fail: 1
+
+paths:
+  raw_data_root: "datasets/raw"
+  processed_data_root: "datasets/processed"
+  reports_root: "datasets/reports"
+  logs_dir: "logs"
+
+logging:
+  level: "INFO"                           # DEBUG | INFO | WARNING | ERROR
+  log_to_file: true
+  log_filename: "semimind_phase1.log"

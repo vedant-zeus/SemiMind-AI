@@ -1,0 +1,208 @@
+{
+  "general_information": {
+    "dataset_name": "AI4I 2020 Predictive Maintenance",
+    "profiled_at": "2026-11-02T23:14:44",
+    "num_rows": 10000,
+    "num_columns": 14,
+    "file_size_bytes": 522048,
+    "file_size_mb": 0.498,
+    "column_names": [
+      "UDI",
+      "Product ID",
+      "Type",
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]",
+      "Machine failure",
+      "TWF",
+      "HDF",
+      "PWF",
+      "OSF",
+      "RNF"
+    ],
+    "dtypes": {
+      "UDI": "int64",
+      "Product ID": "object",
+      "Type": "object",
+      "Air temperature [K]": "float64",
+      "Process temperature [K]": "float64",
+      "Rotational speed [rpm]": "int64",
+      "Torque [Nm]": "float64",
+      "Tool wear [min]": "int64",
+      "Machine failure": "int64",
+      "TWF": "int64",
+      "HDF": "int64",
+      "PWF": "int64",
+      "OSF": "int64",
+      "RNF": "int64"
+    }
+  },
+  "data_quality": {
+    "total_missing_values": 0,
+    "pct_missing_overall": 0.0,
+    "columns_with_missing": 0,
+    "duplicate_rows": 0,
+    "infinite_values": 0,
+    "constant_columns": [],
+    "constant_column_count": 0,
+    "missing_per_column": {}
+  },
+  "numerical_summary": {
+    "UDI": {
+      "count": 10000.0,
+      "mean": 5000.5,
+      "median": 5000.5,
+      "std": 2886.8956799071675,
+      "min": 1.0,
+      "q25": 2500.75,
+      "q50": 5000.5,
+      "q75": 7500.25,
+      "max": 10000.0
+    },
+    "Air temperature [K]": {
+      "count": 10000.0,
+      "mean": 300.00493,
+      "median": 300.1,
+      "std": 2.000258682915751,
+      "min": 295.3,
+      "q25": 298.3,
+      "q50": 300.1,
+      "q75": 301.5,
+      "max": 304.5
+    },
+    "Process temperature [K]": {
+      "count": 10000.0,
+      "mean": 310.00556,
+      "median": 310.1,
+      "std": 1.4837342191657208,
+      "min": 305.7,
+      "q25": 308.8,
+      "q50": 310.1,
+      "q75": 311.1,
+      "max": 313.8
+    },
+    "Rotational speed [rpm]": {
+      "count": 10000.0,
+      "mean": 1538.7761,
+      "median": 1503.0,
+      "std": 179.2840959134266,
+      "min": 1168.0,
+      "q25": 1423.0,
+      "q50": 1503.0,
+      "q75": 1612.0,
+      "max": 2886.0
+    },
+    "Torque [Nm]": {
+      "count": 10000.0,
+      "mean": 39.986909999999995,
+      "median": 40.1,
+      "std": 9.968933725121337,
+      "min": 3.8,
+      "q25": 33.2,
+      "q50": 40.1,
+      "q75": 46.8,
+      "max": 76.6
+    },
+    "Tool wear [min]": {
+      "count": 10000.0,
+      "mean": 107.951,
+      "median": 108.0,
+      "std": 63.654146636636355,
+      "min": 0.0,
+      "q25": 53.0,
+      "q50": 108.0,
+      "q75": 162.0,
+      "max": 253.0
+    },
+    "Machine failure": {
+      "count": 10000.0,
+      "mean": 0.0339,
+      "median": 0.0,
+      "std": 0.18098084265065364,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    },
+    "TWF": {
+      "count": 10000.0,
+      "mean": 0.0046,
+      "median": 0.0,
+      "std": 0.06767051004531426,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    },
+    "HDF": {
+      "count": 10000.0,
+      "mean": 0.0115,
+      "median": 0.0,
+      "std": 0.10662498247919606,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    },
+    "PWF": {
+      "count": 10000.0,
+      "mean": 0.0095,
+      "median": 0.0,
+      "std": 0.09700871645943425,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    },
+    "OSF": {
+      "count": 10000.0,
+      "mean": 0.0098,
+      "median": 0.0,
+      "std": 0.09851360562404211,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    },
+    "RNF": {
+      "count": 10000.0,
+      "mean": 0.0019,
+      "median": 0.0,
+      "std": 0.043549737748530666,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 1.0
+    }
+  },
+  "target_information": {
+    "target_column": "Machine failure",
+    "unique_values": [
+      0,
+      1
+    ],
+    "num_classes": 2,
+    "distribution": {
+      "0": {
+        "label": "No Failure",
+        "count": 9661,
+        "pct": 96.61
+      },
+      "1": {
+        "label": "Machine Failure",
+        "count": 339,
+        "pct": 3.39
+      }
+    },
+    "imbalance_ratio": 28.5,
+    "imbalance_note": "Severe class imbalance (ratio > 10)."
+  }
+}
