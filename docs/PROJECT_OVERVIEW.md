@@ -27,3 +27,4 @@ Phase 10  Generative AI, RAG & Agentic AI
 - **Observable** — Structured logging at every layer.
 - **Tested** — All modules have unit tests with synthetic fixtures.
 - **Documented** — Code, decisions, and findings documented throughout.
+

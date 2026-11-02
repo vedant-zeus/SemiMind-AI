@@ -58,3 +58,4 @@ logging:
   level: "INFO"                           # DEBUG | INFO | WARNING | ERROR
   log_to_file: true
   log_filename: "semimind_phase1.log"
+

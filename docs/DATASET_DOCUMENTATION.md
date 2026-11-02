@@ -72,3 +72,4 @@ secom_labels.data:
 |-------|---------|
 | -1 | Pass — wafer passed in-house line testing |
 | 1 | Fail — wafer failed in-house line testing (yield excursion) |
+

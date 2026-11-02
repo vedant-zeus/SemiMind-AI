@@ -183,3 +183,4 @@ class TestLoadSECOM:
     def test_labels_file_not_found(self, secom_data: Path, tmp_path: Path) -> None:
         with pytest.raises(FileNotFoundError):
             load_secom(secom_data, tmp_path / "missing_labels.data")
+

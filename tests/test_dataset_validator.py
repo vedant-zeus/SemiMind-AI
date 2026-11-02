@@ -227,3 +227,4 @@ class TestConfigLoading:
         assert "name" in cfg.secom
         assert "raw_data_file" in cfg.secom
         assert "raw_labels_file" in cfg.secom
+
